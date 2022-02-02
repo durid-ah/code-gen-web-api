@@ -19,12 +19,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+code_gen_web_api.EndpointBuilder.BuildEndpoints(app);
+
 app.MapPost("/NoParamReturnVal", (SomeTestMethods methods) => methods.NoParamReturnVal()).WithName("NoParamReturnVal");
 app.MapPost("/ParamReturnVal", (SomeTestMethods methods, string value) => methods.ParamReturnVal(value)).WithName("ParamReturnVal");
 
 app.Run();
-
-internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
