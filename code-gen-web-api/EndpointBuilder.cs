@@ -2,6 +2,11 @@
 {
     public partial class EndpointBuilder
     {
-        public static partial void BuildEndpoints(WebApplication app);
+        public static void Build(WebApplication app)
+        {
+            BuildEndpoints(app);
+        }
+
+        static partial void BuildEndpoints(WebApplication app);
     }
 }
