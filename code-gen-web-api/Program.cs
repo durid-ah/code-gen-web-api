@@ -19,9 +19,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-code_gen_web_api.EndpointBuilder.Build(app);
 
 app.MapPost("/NoParamReturnVal", (SomeTestMethods methods) => methods.NoParamReturnVal()).WithName("NoParamReturnVal");
 app.MapPost("/ParamReturnVal", (SomeTestMethods methods, string value) => methods.ParamReturnVal(value)).WithName("ParamReturnVal");
+code_gen_web_api.EndpointBuilder.Build(app);
 
 app.Run();
