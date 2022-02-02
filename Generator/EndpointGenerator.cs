@@ -32,7 +32,7 @@ namespace Generator
             var supplementClassMembers = suppClass.Members
                 .Where(x => x is MethodDeclarationSyntax)
                 .Select(m => m as MethodDeclarationSyntax);
-                //.SelectMany(m => m.ParameterList.Parameters).Select(m => m.Type.ToString()));
+                //.SelectMany(m => m.ParameterList.Parameters).Select(m => m.Type.ToString())); // returns the parameter types for a method
                 
 
             // add the generated implementation to the compilation
@@ -42,7 +42,7 @@ using System;
 namespace {nameSpace.Name};
 public partial class {userClass.Identifier}
 {{
-    // {res}
+    
     static partial void BuildEndpoints(WebApplication app)
     {{
         app.MapGet(""/test"", () => ""generated"").WithName(""Gen"");
