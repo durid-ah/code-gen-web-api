@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "code-gen-web-api", "code-gen-web-api\code-gen-web-api.csproj", "{34D1CCDF-FF53-4213-BD2D-B2EC379FB61A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "Generator\Generator.csproj", "{54DEB71B-F693-4803-A6BE-532CC5646F63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{34D1CCDF-FF53-4213-BD2D-B2EC379FB61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34D1CCDF-FF53-4213-BD2D-B2EC379FB61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34D1CCDF-FF53-4213-BD2D-B2EC379FB61A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54DEB71B-F693-4803-A6BE-532CC5646F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54DEB71B-F693-4803-A6BE-532CC5646F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54DEB71B-F693-4803-A6BE-532CC5646F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54DEB71B-F693-4803-A6BE-532CC5646F63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
